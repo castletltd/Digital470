@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Xilinx/Projects/PC2118FPGA/Top_PC2118.xst" -ofn "C:/Xilinx/Projects/PC2118FPGA/Top_PC2118.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_PC2118.ucf -p xc3s500e-ft256-4 Top_PC2118.ngc Top_PC2118.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o Top_PC2118_map.ncd Top_PC2118.ngd Top_PC2118.pcf 
+par -w -intstyle ise -ol high -t 1 Top_PC2118_map.ncd Top_PC2118.ncd Top_PC2118.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top_PC2118.twx Top_PC2118.ncd -o Top_PC2118.twr Top_PC2118.pcf -ucf Top_PC2118.ucf 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/PC2118FPGA/Top_PC2118.xst" -ofn "C:/Xilinx/Projects/PC2118FPGA/Top_PC2118.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_PC2118.ucf -p xc3s500e-ft256-4 Top_PC2118.ngc Top_PC2118.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_PC2118.ucf -p xc3s500e-ft256-4 Top_PC2118.ngc Top_PC2118.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o Top_PC2118_map.ncd Top_PC2118.ngd Top_PC2118.pcf 
+par -w -intstyle ise -ol high -t 1 Top_PC2118_map.ncd Top_PC2118.ncd Top_PC2118.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top_PC2118.twx Top_PC2118.ncd -o Top_PC2118.twr Top_PC2118.pcf -ucf Top_PC2118.ucf 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/PC2118FPGA/Top_PC2118.xst" -ofn "C:/Xilinx/Projects/PC2118FPGA/Top_PC2118.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_PC2118.ucf -p xc3s500e-ft256-4 Top_PC2118.ngc Top_PC2118.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o Top_PC2118_map.ncd Top_PC2118.ngd Top_PC2118.pcf 
+par -w -intstyle ise -ol high -t 1 Top_PC2118_map.ncd Top_PC2118.ncd Top_PC2118.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top_PC2118.twx Top_PC2118.ncd -o Top_PC2118.twr Top_PC2118.pcf -ucf Top_PC2118.ucf 
+bitgen -intstyle ise -f Top_PC2118.ut Top_PC2118.ncd 

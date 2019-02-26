@@ -1,0 +1,123 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Top_PC2118.vf
+// /___/   /\     Timestamp : 02/14/2019 21:23:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Xilinx/Projects/PC2118FPGA/Top_PC2118.vf -w C:/Xilinx/Projects/PC2118FPGA/Top_PC2118.sch
+//Design Name: Top_PC2118
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Top_PC2118(A, 
+                  BLU_REF, 
+                  CLK, 
+                  n_CS, 
+                  n_OE, 
+                  n_WE, 
+                  RED_REF, 
+                  YEL_REF, 
+                  D, 
+                  EN_FIB_OP, 
+                  LED1, 
+                  LED2, 
+                  ZX_INT);
+
+    input [6:0] A;
+    input BLU_REF;
+    input CLK;
+    input n_CS;
+    input n_OE;
+    input n_WE;
+    input RED_REF;
+    input YEL_REF;
+   output [15:0] D;
+   output EN_FIB_OP;
+   output LED1;
+   output LED2;
+   output ZX_INT;
+   
+   wire XLXN_15;
+   wire XLXN_23;
+   wire XLXN_40;
+   wire XLXN_44;
+   wire XLXN_56;
+   wire [15:0] XLXN_70;
+   wire XLXN_74;
+   wire XLXN_89;
+   wire XLXN_95;
+   wire XLXN_100;
+   wire XLXN_110;
+   wire XLXN_111;
+   wire ZX_INT_DUMMY;
+   wire LED1_DUMMY;
+   wire LED2_DUMMY;
+   
+   assign XLXN_70 = 16'h0200;
+   assign LED1 = LED1_DUMMY;
+   assign LED2 = LED2_DUMMY;
+   assign ZX_INT = ZX_INT_DUMMY;
+   DCM  XLXI_1 (.CLKIN_IN(CLK), 
+               .RST_IN(XLXN_15), 
+               .CLKDV_OUT(XLXN_23), 
+               .CLKIN_IBUFG_OUT(), 
+               .CLK0_OUT(), 
+               .LOCKED_OUT());
+   GND  XLXI_8 (.G(XLXN_15));
+   clkmod  XLXI_9 (.clk(XLXN_23), 
+                  .enIn(XLXN_100), 
+                  .rst(XLXN_95), 
+                  .enable(XLXN_44), 
+                  .enable1(XLXN_40), 
+                  .enable2(XLXN_89));
+   PULLUP  XLXI_10 (.O(XLXN_100));
+   phaseman  XLXI_11 (.bphase(BLU_REF), 
+                     .clk(XLXN_23), 
+                     .enable(XLXN_89), 
+                     .rphase(RED_REF), 
+                     .yphase(YEL_REF), 
+                     .missing(LED1_DUMMY), 
+                     .rdbphase(ZX_INT_DUMMY), 
+                     .rotation(LED2_DUMMY));
+   NOR2  XLXI_12 (.I0(LED1_DUMMY), 
+                 .I1(LED2_DUMMY), 
+                 .O(EN_FIB_OP));
+   periodcnt  XLXI_13 (.clk(XLXN_23), 
+                      .cpu_address(A[6:0]), 
+                      .cpu_rd(XLXN_56), 
+                      .enable(XLXN_44), 
+                      .enable12(XLXN_40), 
+                      .sync(XLXN_74), 
+                      .zxing(ZX_INT_DUMMY), 
+                      .cpu_data(D[15:0]), 
+                      .fsmclk(XLXN_110), 
+                      .gate(XLXN_111));
+   NOR2  XLXI_14 (.I0(n_CS), 
+                 .I1(n_OE), 
+                 .O(XLXN_56));
+   NOR2  XLXI_15 (.I0(n_WE), 
+                 .I1(n_CS), 
+                 .O());
+   demand  XLXI_16 (.clk(XLXN_23), 
+                   .delay(XLXN_70[15:0]), 
+                   .enable(XLXN_40), 
+                   .zxing(ZX_INT_DUMMY), 
+                   .sync(XLXN_74));
+   GND  XLXI_18 (.G(XLXN_95));
+   statem  XLXI_19 (.clk(XLXN_23), 
+                   .osc(XLXN_111), 
+                   .sclk(XLXN_110), 
+                   .sync(XLXN_74), 
+                   .firing());
+endmodule

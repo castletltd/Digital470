@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Xilinx/Projects/PC2118FPGA/ipcore_dir/DCM.v -lang verilog -prj PC2118FPGA -o DCM.spl -module DCM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e DCM.spl C:/Xilinx/Projects/PC2118FPGA/DCM.sym 

@@ -1,0 +1,16 @@
+[Inputs]
+clk
+enable12
+enable
+zxing
+cpu_rd
+sync
+=cpu_address[6:0]=
+[Outputs]
+fsmclk
+gate
+=cpu_data[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel periodcnt
+

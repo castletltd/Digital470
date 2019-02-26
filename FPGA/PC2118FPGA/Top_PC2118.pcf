@@ -1,0 +1,103 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Feb 14 21:24:13 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "EN_FIB_OP" LOCATE = SITE "K13" LEVEL 1;
+COMP "D<10>" LOCATE = SITE "G4" LEVEL 1;
+COMP "D<11>" LOCATE = SITE "G5" LEVEL 1;
+COMP "D<12>" LOCATE = SITE "G2" LEVEL 1;
+COMP "D<13>" LOCATE = SITE "G3" LEVEL 1;
+COMP "A<0>" LOCATE = SITE "K1" LEVEL 1;
+COMP "D<14>" LOCATE = SITE "H6" LEVEL 1;
+COMP "A<1>" LOCATE = SITE "M1" LEVEL 1;
+COMP "YEL_REF" LOCATE = SITE "F8" LEVEL 1;
+COMP "D<15>" LOCATE = SITE "H5" LEVEL 1;
+COMP "A<2>" LOCATE = SITE "N1" LEVEL 1;
+COMP "A<3>" LOCATE = SITE "P1" LEVEL 1;
+COMP "A<4>" LOCATE = SITE "R1" LEVEL 1;
+COMP "A<5>" LOCATE = SITE "J1" LEVEL 1;
+COMP "BLU_REF" LOCATE = SITE "E8" LEVEL 1;
+COMP "A<6>" LOCATE = SITE "K3" LEVEL 1;
+COMP "ZX_INT" LOCATE = SITE "C16" LEVEL 1;
+COMP "D<0>" LOCATE = SITE "B2" LEVEL 1;
+COMP "D<1>" LOCATE = SITE "B1" LEVEL 1;
+COMP "D<2>" LOCATE = SITE "C2" LEVEL 1;
+COMP "D<3>" LOCATE = SITE "C1" LEVEL 1;
+COMP "D<4>" LOCATE = SITE "E4" LEVEL 1;
+COMP "RED_REF" LOCATE = SITE "C8" LEVEL 1;
+COMP "D<5>" LOCATE = SITE "E3" LEVEL 1;
+COMP "D<6>" LOCATE = SITE "F4" LEVEL 1;
+COMP "D<7>" LOCATE = SITE "F3" LEVEL 1;
+COMP "D<8>" LOCATE = SITE "E1" LEVEL 1;
+COMP "D<9>" LOCATE = SITE "D1" LEVEL 1;
+COMP "LED1" LOCATE = SITE "C3" LEVEL 1;
+COMP "LED2" LOCATE = SITE "B3" LEVEL 1;
+COMP "n_CS" LOCATE = SITE "H4" LEVEL 1;
+COMP "n_OE" LOCATE = SITE "H3" LEVEL 1;
+COMP "CLK" LOCATE = SITE "T9" LEVEL 1;
+TIMEGRP XLXI_1_CLKDV_BUF = BEL "XLXI_9/clk10usenable/enableOut" BEL
+        "XLXI_13/periodcnt_15" BEL "XLXI_13/periodcnt_14" BEL
+        "XLXI_13/periodcnt_13" BEL "XLXI_13/periodcnt_12" BEL
+        "XLXI_13/periodcnt_11" BEL "XLXI_13/periodcnt_10" BEL
+        "XLXI_13/periodcnt_9" BEL "XLXI_13/periodcnt_8" BEL
+        "XLXI_13/periodcnt_7" BEL "XLXI_13/periodcnt_6" BEL
+        "XLXI_13/periodcnt_5" BEL "XLXI_13/periodcnt_4" BEL
+        "XLXI_13/periodcnt_3" BEL "XLXI_13/periodcnt_2" BEL
+        "XLXI_13/periodcnt_1" BEL "XLXI_13/periodcnt_0" BEL
+        "XLXI_13/period_15" BEL "XLXI_13/period_14" BEL "XLXI_13/period_13"
+        BEL "XLXI_13/period_12" BEL "XLXI_13/period_11" BEL
+        "XLXI_13/period_10" BEL "XLXI_13/period_9" BEL "XLXI_13/period_8" BEL
+        "XLXI_13/period_7" BEL "XLXI_13/period_6" BEL "XLXI_13/period_5" BEL
+        "XLXI_13/period_4" BEL "XLXI_13/period_3" BEL "XLXI_13/period_2" BEL
+        "XLXI_13/period_1" BEL "XLXI_13/period_0" BEL "XLXI_11/rdb/dbphase"
+        BEL "XLXI_11/rdb/missing" BEL "XLXI_11/rdb/lockout_0" BEL
+        "XLXI_11/rdb/lockout_1" BEL "XLXI_11/rdb/lockout_2" BEL
+        "XLXI_11/rdb/lockout_3" BEL "XLXI_11/rdb/lockout_4" BEL
+        "XLXI_11/rdb/lockout_5" BEL "XLXI_11/rdb/lockout_6" BEL
+        "XLXI_11/rdb/lockout_7" BEL "XLXI_11/rdb/count_0" BEL
+        "XLXI_11/rdb/count_1" BEL "XLXI_11/rdb/count_2" BEL
+        "XLXI_11/rdb/count_3" BEL "XLXI_11/rdb/wdcnt_0" BEL
+        "XLXI_11/rdb/wdcnt_1" BEL "XLXI_11/rdb/wdcnt_2" BEL
+        "XLXI_11/rdb/wdcnt_3" BEL "XLXI_11/rdb/wdcnt_4" BEL
+        "XLXI_11/rdb/wdcnt_5" BEL "XLXI_11/rdb/wdcnt_6" BEL
+        "XLXI_11/rdb/wdcnt_7" BEL "XLXI_11/rdb/wdcnt_8" BEL
+        "XLXI_11/rdb/wdcnt_9" BEL "XLXI_11/rdb/wdcnt_10" BEL
+        "XLXI_11/rdb/wdcnt_11" BEL "XLXI_11/ydb/missing" BEL
+        "XLXI_11/ydb/lockout_0" BEL "XLXI_11/ydb/lockout_1" BEL
+        "XLXI_11/ydb/lockout_2" BEL "XLXI_11/ydb/lockout_3" BEL
+        "XLXI_11/ydb/lockout_4" BEL "XLXI_11/ydb/lockout_5" BEL
+        "XLXI_11/ydb/lockout_6" BEL "XLXI_11/ydb/lockout_7" BEL
+        "XLXI_11/ydb/count_0" BEL "XLXI_11/ydb/count_1" BEL
+        "XLXI_11/ydb/count_2" BEL "XLXI_11/ydb/count_3" BEL
+        "XLXI_11/ydb/wdcnt_0" BEL "XLXI_11/ydb/wdcnt_1" BEL
+        "XLXI_11/ydb/wdcnt_2" BEL "XLXI_11/ydb/wdcnt_3" BEL
+        "XLXI_11/ydb/wdcnt_4" BEL "XLXI_11/ydb/wdcnt_5" BEL
+        "XLXI_11/ydb/wdcnt_6" BEL "XLXI_11/ydb/wdcnt_7" BEL
+        "XLXI_11/ydb/wdcnt_8" BEL "XLXI_11/ydb/wdcnt_9" BEL
+        "XLXI_11/ydb/wdcnt_10" BEL "XLXI_11/ydb/wdcnt_11" BEL
+        "XLXI_11/bdb/missing" BEL "XLXI_11/bdb/lockout_0" BEL
+        "XLXI_11/bdb/lockout_1" BEL "XLXI_11/bdb/lockout_2" BEL
+        "XLXI_11/bdb/lockout_3" BEL "XLXI_11/bdb/lockout_4" BEL
+        "XLXI_11/bdb/lockout_5" BEL "XLXI_11/bdb/lockout_6" BEL
+        "XLXI_11/bdb/lockout_7" BEL "XLXI_11/bdb/count_0" BEL
+        "XLXI_11/bdb/count_1" BEL "XLXI_11/bdb/count_2" BEL
+        "XLXI_11/bdb/count_3" BEL "XLXI_11/bdb/wdcnt_0" BEL
+        "XLXI_11/bdb/wdcnt_1" BEL "XLXI_11/bdb/wdcnt_2" BEL
+        "XLXI_11/bdb/wdcnt_3" BEL "XLXI_11/bdb/wdcnt_4" BEL
+        "XLXI_11/bdb/wdcnt_5" BEL "XLXI_11/bdb/wdcnt_6" BEL
+        "XLXI_11/bdb/wdcnt_7" BEL "XLXI_11/bdb/wdcnt_8" BEL
+        "XLXI_11/bdb/wdcnt_9" BEL "XLXI_11/bdb/wdcnt_10" BEL
+        "XLXI_11/bdb/wdcnt_11" BEL "XLXI_11/rotcount_3" BEL
+        "XLXI_11/rotcount_2" BEL "XLXI_11/rotcount_1" BEL "XLXI_11/rotcount_0"
+        BEL "XLXI_9/clk10usenable/enableOut_1" BEL
+        "XLXI_9/clk10usenable/enableOut_2" BEL
+        "XLXI_9/clk10usenable/enableOut_3" BEL
+        "XLXI_9/clk10usenable/enableOut_4" BEL
+        "XLXI_1/CLKDV_BUFG_INST.GCLKMUX" BEL "XLXI_1/CLKDV_BUFG_INST";
+PIN XLXI_1/DCM_SP_INST_pins<3> = BEL "XLXI_1/DCM_SP_INST" PINNAME CLKIN;
+TIMEGRP CLK = PIN "XLXI_1/DCM_SP_INST_pins<3>";
+TS_clock = PERIOD TIMEGRP "CLK" 10 ns HIGH 50%;
+TS_XLXI_1_CLKDV_BUF = PERIOD TIMEGRP "XLXI_1_CLKDV_BUF" TS_clock * 2 HIGH 50%;
+SCHEMATIC END;
+

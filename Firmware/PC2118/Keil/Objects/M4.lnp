@@ -1,0 +1,22 @@
+--cpu=Cortex-M4.fp
+".\objects\startup_lpc43xx.o"
+".\objects\system_lpc43xx.o"
+".\objects\croutine.o"
+".\objects\event_groups.o"
+".\objects\heap_2.o"
+".\objects\list.o"
+".\objects\port.o"
+".\objects\queue.o"
+".\objects\tasks.o"
+".\objects\timers.o"
+".\objects\mainm4.o"
+".\objects\rtos.o"
+".\objects\utils.o"
+".\objects\lpc43xx_cgu.o"
+".\objects\lpc43xx_emc.o"
+".\objects\lpc43xx_gpio.o"
+".\objects\lpc43xx_scu.o"
+--library_type=microlib --strict --scatter ".\Objects\M4.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\M4.map" -o .\Objects\M4.axf

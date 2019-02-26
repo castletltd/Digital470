@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Xilinx/Projects/PC2118FPGA/fsm.v -lang verilog -prj PC2118FPGA -o statem.spl -module statem -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e statem.spl C:/Xilinx/Projects/PC2118FPGA/statem.sym 

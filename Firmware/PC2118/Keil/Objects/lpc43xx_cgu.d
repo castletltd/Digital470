@@ -1,0 +1,11 @@
+.\objects\lpc43xx_cgu.o: Drivers\source\lpc43xx_cgu.c
+.\objects\lpc43xx_cgu.o: \Keil_v5\Projects\PC2118\Keil\Drivers\include\lpc_types.h
+.\objects\lpc43xx_cgu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lpc43xx_cgu.o: \Keil_v5\Projects\PC2118\Keil\Drivers\include\lpc43xx_scu.h
+.\objects\lpc43xx_cgu.o: \Keil_v5\Projects\PC2118\Keil\Drivers\include\lpc43xx_cgu.h
+.\objects\lpc43xx_cgu.o: C:\Keil_v5\ARM\PACK\Keil\LPC4300_DFP\2.7.0\Device\Include\lpc43xx.h
+.\objects\lpc43xx_cgu.o: .\Core\CMSIS\Include\core_cm4.h
+.\objects\lpc43xx_cgu.o: .\Core\CMSIS\Include\core_cmInstr.h
+.\objects\lpc43xx_cgu.o: .\Core\CMSIS\Include\core_cmFunc.h
+.\objects\lpc43xx_cgu.o: .\Core\CMSIS\Include\core_cm4_simd.h
+.\objects\lpc43xx_cgu.o: C:\Keil_v5\ARM\PACK\Keil\LPC4300_DFP\2.7.0\Device\Include\system_LPC43xx.h

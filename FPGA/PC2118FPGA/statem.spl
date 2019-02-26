@@ -1,0 +1,11 @@
+[Inputs]
+clk
+sclk
+sync
+osc
+[Outputs]
+=firing[5:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel statem
+

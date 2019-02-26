@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Xilinx\Projects\PC2118FPGA\impact.xsl
+OUTFILE=C:\Xilinx\Projects\PC2118FPGA\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Xilinx\Projects\PC2118FPGA
+LICENSE=iMPACT
+USER_INFO=iMPACT

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Xilinx/Projects/PC2118FPGA/demand.v -lang verilog -prj PC2118FPGA -o demand.spl -module demand -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e demand.spl C:/Xilinx/Projects/PC2118FPGA/demand.sym 

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Xilinx/Projects/PC2118FPGA/xst/projnav.tmp"
+set -xsthdpdir "C:/Xilinx/Projects/PC2118FPGA/xst"
+elaborate
+-ifn periodcnt.prj
+-ifmt mixed

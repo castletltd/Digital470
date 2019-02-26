@@ -1,0 +1,11 @@
+[Inputs]
+clk
+enable
+zxing
+=delay[15:0]=
+[Outputs]
+sync
+[BiDir]
+[ATTRIBUTES]
+VeriModel demand
+
